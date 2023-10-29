@@ -52,7 +52,8 @@ const ComputersCanvas = () => {
     <Canvas
       frameLoop='demand'
       shadows
-      camera={{position: [20, 3, 5], fov: 25}}
+      camera={{position: [20, 3, 5], fov: 25}} 
+      >
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls 
             enableZoom={false}
